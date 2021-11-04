@@ -5,32 +5,46 @@ import CardItem from "./CardItem";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Meet the Team</h1>
+      <p className="card__header">Team</p>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src={require("../images/SuperStonerBirthdayParty1.jpg").default}
-              text="MRstoner - Lead Stoner"
-              label="Software"
+              src={require("../images/MRstoner.png").default}
+              name="MRstoner"
+              text="Brains on brains"
               path="/"
             />
             <CardItem
-              src={require("../images/SuperStonerBirthdayParty2.jpg").default}
-              text="DesginerDrugged - Designer"
-              label="UI"
+              src={require("../images/CoolPartyFavors.png").default}
+              name="CoolPartyFavors"
+              text="Arts ‘n tings"
               path="/"
             />
             <CardItem
-              src={require("../images/SuperStonerBirthdayParty8.png").default}
-              text="gh0stlee - Marketing"
-              label="Community"
+              src={require("../images/ghostlee.png").default}
+              name="gh0stlee"
+              text="Packs the party"
+              path="/"
+            />
+            </ul>
+            <ul className="cards__items">
+            <CardItem
+              src={require("../images/designerDrugd.png").default}
+              name="designerDrug’d"
+              text="Draws boxes"
               path="/"
             />
             <CardItem
-              src={require("../images/SuperStonerBirthdayParty6.png").default}
-              text="stonedSkynet - Developer"
-              label="Software"
+              src={require("../images/QL.png").default}
+              name="QL"
+              text="Our link to the blockchain"
+              path="/"
+            />
+            <CardItem
+              src={require("../images/stonedSkyn3t.png").default}
+              name="stonedSkyn3t"
+              text="Too many keyboards"
               path="/"
             />
           </ul>

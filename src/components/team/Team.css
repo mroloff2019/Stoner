@@ -1,0 +1,46 @@
+.teamContainer {
+  width: 1255px;
+  height: 968px;
+  left: 92px;
+  top: 2894px;
+}
+
+.teamHeader {
+  width: 105px;
+  left: 30px;
+  top: 0px;
+
+  font-family: Irish Grover;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  margin-left: 151px;
+  margin-top: 76px;
+
+  color: #F6F6F4;
+}
+
+.teamListWrapper {
+  margin-left: 121px;
+  margin-top: 48px;
+}
+
+.teamList {
+  display: flex;
+}
+
+.teamItemContainer {
+  list-style-type: none;
+}
+
+.teamItemImgWrap {
+  position: relative;
+  width: 240px;
+  height: 320px;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
