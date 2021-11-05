@@ -1,0 +1,61 @@
+.roadMapContainer {
+  color: #F6F6F4;
+  align-items: flex-start;
+  max-width: 1260px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.roadMapTitle {
+  width: 167px;
+  height: 44px;
+  left: 30px;
+  top: 18px;
+
+  font-family: Irish Grover;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+
+  color: #F6F6F4
+}
+
+.roadMapList {
+  list-style-type: none;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.roadMapItem {
+  width: 1048px;
+  left: 104px;
+  top: 90px;
+
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+
+  color: #F6F6F4;
+  margin-bottom: 70px;
+}
+
+.roadMapText {
+  width: 1048px;
+  height: 1421px;
+  left: 104px;
+  top: 90px;
+
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+
+  color: #F6F6F4;  
+}

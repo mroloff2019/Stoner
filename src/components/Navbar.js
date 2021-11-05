@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            Super Stoner Costume Party <i className="fab fa-typo3" />
+            Super Stoner Costume Party
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -38,7 +38,17 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Socials
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Roadmap
               </Link>
             </li>
             <li className="nav-item">
@@ -46,23 +56,7 @@ function Navbar() {
                 Team
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Project
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to={{ pathname: "https://discord.gg/qK453kMFM3" }}
-                target="blank"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Join Discord
-              </Link>
-            </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Join Discord</Button>}
         </div>
       </nav>
     </>
