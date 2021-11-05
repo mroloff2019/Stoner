@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import './WelcomeMessage.css'
 
 
-const WelcomeMessage = () => {
+const WelcomeMessage = props => {
+
+  const { welcomeRef } = props
 
   const handleButtonClick = () => {
     console.log('button clicked navigate to somewhere')
@@ -11,7 +13,7 @@ const WelcomeMessage = () => {
 
   return (
     <>
-    <div className="welcomeContainer">
+    <div className="welcomeContainer" ref={welcomeRef}>
       <div className="welcomeLeftSide">
         <div className="textTitleContainer">
           <p className="welcomeTitle">Welcome to the Super Stoner Costume party at Royalty Ln.</p>
@@ -53,7 +55,7 @@ const WelcomeMessage = () => {
           </a>
           <Link
               className="socialIcon"
-              to="/"
+              to="https://www.instagram.com/superstonercostumeparty/"
               target="_blank"
               aria-label="Instagram"
             >
