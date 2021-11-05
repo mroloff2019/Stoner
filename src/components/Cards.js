@@ -2,9 +2,10 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 
-function Cards() {
+function Cards(props) {
+  const { teamRef } = props
   return (
-    <div className="cards">
+    <div className="cards" ref={teamRef}>
       <p className="card__header">Team</p>
       <div className="cards__container">
         <div className="cards__wrapper">

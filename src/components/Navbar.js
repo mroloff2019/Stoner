@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Button";
 
-function Navbar() {
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const { elRefs, scrollToEl } = props
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -28,7 +30,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={() => {}}>
             Super Stoner Costume Party
           </Link>
 
@@ -37,22 +39,22 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef) }>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef) }>
                 Socials
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.roadMapRef) }>
                 Roadmap
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.teamRef) }>
                 Team
               </Link>
             </li>
