@@ -1,0 +1,5 @@
+deployment:
+ tasks:
+ - export DEPLOYPATH=/build/index.html
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp style.css $DEPLOYPATH
