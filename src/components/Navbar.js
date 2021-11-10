@@ -30,9 +30,9 @@ function Navbar(props) {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={() => {}}>
+          <h1 className="navbar-logo">
             Super Stoner Costume Party
-          </Link>
+          </h1>
 
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
