@@ -46,7 +46,7 @@ const WelcomeMessage = props => {
                 <i className="fab fa-twitter"></i>
               </a>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-end'}}>
               <Link
                 className="socialIcon"
                 to="https://www.instagram.com/superstonercostumeparty/"
@@ -57,9 +57,46 @@ const WelcomeMessage = props => {
               </Link>
             </div>
           </div>
+          <div className="mobileSocial">
+            <p className="mobileSocialText">GET SOCIAL</p>
+            <div className="mobileBtnContainer">
+              <div>
+                <a
+                  className="socialIcon"
+                  href="https://discord.gg/qK453kMFM3"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Discord"
+                >
+                  <i className="fab fa-discord"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  className="socialIcon"
+                  href="https://twitter.com/SSCostumeParty"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div>
+                <Link
+                  className="socialIcon"
+                  to="https://www.instagram.com/superstonercostumeparty/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i className="fab fa-instagram"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <hr className="welcomeContainer" style={{ marginBottom: '80px' }} />
+      <hr className="welcomeContainer divider" style={{ marginBottom: '80px' }} />
     </>
   )
 }

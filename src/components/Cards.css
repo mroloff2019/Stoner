@@ -6,22 +6,43 @@ h1 {
   text-align: center;
 }
 
-.card__header {
-  width: 105px;
-  left: 30px;
-  top: 0px;
+@media screen and (min-width: 601px) {
+  .card__header {
+    width: 105px;
+    left: 30px;
+    top: 0px;
 
-  font-family: Irish Grover;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 44px;
-  letter-spacing: 0.005em;
-  text-transform: uppercase;
-  margin-left: 151px;
-  margin-top: 76px;
+    font-family: Irish Grover;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    margin-left: 151px;
+    margin-top: 76px;
 
-  color: #F6F6F4;
+    color: #F6F6F4;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card__header {
+    width: 105px;
+    height: 29px;
+    left: 22px;
+    top: 0px;
+
+    font-family: Irish Grover;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+
+    color: #F6F6F4;
+  }
 }
 
 .cards__container {
