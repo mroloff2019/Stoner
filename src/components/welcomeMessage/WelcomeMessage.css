@@ -1,11 +1,12 @@
 @media screen and (min-width: 601px) {
   .welcomeContainer {
     color: #F6F6F4;
-    display: flex;
+    display: block;
     align-items: flex-start;
     max-width: 1260px;
     margin: 0 auto;
     justify-content: space-between;
+    padding-top: 38px;
   }
 
   .welcomeTitle {
@@ -20,20 +21,30 @@
   }
 
   .welcomeBody {
+    width: 987px;
+    height: 65px;
+    left: 215px;
+    top: 827px;
+
     font-family: Kanit;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    width: 572px;
-    height: 120px;
-    left: 120px;
-    top: 946px;
-    margin-top: 16px;
+    padding-top: 36px;
   }
 
   .textTitleContainer {
     margin-bottom: 61px;
+  }
+
+  .socialTitle {
+    font-family: Irish Grover;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
   }
 
   .joinSocial {
@@ -87,13 +98,10 @@
     margin-bottom: 94px;
   }
 
-  .welcomeLeftSide {
-    margin: 72px 0px;
-  }
-
   .welcomeRightSide {
     margin: 134px 0px 72px 0;
-    margin-bottom: 72px; 
+    margin-bottom: 72px;
+    display: flex;
   }
 
   .socialContainer {
@@ -164,9 +172,5 @@
   .socialIcon {
     color: #fff;
     font-size: 36px;
-  }
-
-  .divider {
-    display: none;
   }
 }
