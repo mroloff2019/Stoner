@@ -13,7 +13,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  
+  .heroImage {
+    width: 374px;
+    height: auto;
+    margin-left: 16px;
+  }
 }
 
 .hero-container > h1 {
