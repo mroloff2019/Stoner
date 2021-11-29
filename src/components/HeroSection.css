@@ -13,14 +13,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .hero-container {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 8px;
-  }
+  
 }
 
 .hero-container > h1 {
