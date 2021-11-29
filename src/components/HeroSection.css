@@ -14,15 +14,12 @@
 
 @media screen and (max-width: 600px) {
   .hero-container {
-    width: 374px;
+    width: auto;
     height: auto;
-    left: 8px;
-    top: 67px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
-    overflow: hidden;
+    margin: 8px;
   }
 }
 
