@@ -10,7 +10,7 @@ function Navbar(props) {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const { elRefs, scrollToEl } = props
+  const { elRefs, scrollToEl, showMintPage } = props
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -33,32 +33,37 @@ function Navbar(props) {
           <h1 className="navbar-logo">
             Super Stoner Costume Party
           </h1>
-
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef) }>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef) }>
-                Socials
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.roadMapRef) }>
-                Roadmap
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.teamRef) }>
-                Team
-              </Link>
-            </li>
-          </ul>
+          {!showMintPage &&
+            (
+              <>
+                <div className="menu-icon" onClick={handleClick}>
+                  <i className={click ? "fas fa-times" : "fas fa-bars"} />
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef)}>
+                      About
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.welcomeRef)}>
+                      Socials
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.roadMapRef)}>
+                      Roadmap
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links" onClick={() => scrollToEl(elRefs.teamRef)}>
+                      Team
+                    </Link>
+                  </li>
+                </ul>
+              </>
+            )
+          }
         </div>
       </nav>
     </>
