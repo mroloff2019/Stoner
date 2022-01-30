@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.cc3f2081.chunk.css",
+    "main.js": "./static/js/main.a25ffc39.chunk.js",
+    "main.js.map": "./static/js/main.a25ffc39.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.1f58735c.js",
+    "runtime-main.js.map": "./static/js/runtime-main.1f58735c.js.map",
+    "static/js/2.e95a65b3.chunk.js": "./static/js/2.e95a65b3.chunk.js",
+    "static/js/2.e95a65b3.chunk.js.map": "./static/js/2.e95a65b3.chunk.js.map",
+    "static/js/3.8dd0e371.chunk.js": "./static/js/3.8dd0e371.chunk.js",
+    "static/js/3.8dd0e371.chunk.js.map": "./static/js/3.8dd0e371.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.cc3f2081.chunk.css.map": "./static/css/main.cc3f2081.chunk.css.map",
+    "static/js/2.e95a65b3.chunk.js.LICENSE.txt": "./static/js/2.e95a65b3.chunk.js.LICENSE.txt",
+    "static/media/CoolPartyFavors.png": "./static/media/CoolPartyFavors.46117f6c.png",
+    "static/media/MRstoner.png": "./static/media/MRstoner.7ae3a402.png",
+    "static/media/reset.css": "./static/media/PressStart2P-Regular.f2341734.woff",
+    "static/media/QL.png": "./static/media/QL.7511cb8d.png",
+    "static/media/App.css": "./static/media/SuperStonerBirthdayParty2.0475fa0f.jpg",
+    "static/media/designerDrugd.png": "./static/media/designerDrugd.61670d52.png",
+    "static/media/ghostlee.png": "./static/media/ghostlee.e9480124.png",
+    "static/media/gif1.8dfcfb97.gif": "./static/media/gif1.8dfcfb97.gif",
+    "static/media/houseparty1.png": "./static/media/houseparty1.0a108c66.png",
+    "static/media/metamaskLogo.a819aee3.png": "./static/media/metamaskLogo.a819aee3.png",
+    "static/media/stonedSkyn3t.png": "./static/media/stonedSkyn3t.9c4a10e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f58735c.js",
+    "static/js/2.e95a65b3.chunk.js",
+    "static/css/main.cc3f2081.chunk.css",
+    "static/js/main.a25ffc39.chunk.js"
+  ]
+}

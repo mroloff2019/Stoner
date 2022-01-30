@@ -5,10 +5,12 @@ import './WelcomeMessage.css'
 
 const WelcomeMessage = props => {
 
-  const { welcomeRef } = props
+  const { welcomeRef, setShowMintPage } = props
 
-  const handleButtonClick = () => {
+  const handleButtonClick = (e) => {
+    e.preventDefault()
     console.log('button clicked navigate to somewhere')
+    setShowMintPage(true)
   }
 
   return (
@@ -17,6 +19,9 @@ const WelcomeMessage = props => {
           <div className="textTitleContainer">
             <p className="welcomeTitle">Welcome to the Super Stoner Costume party at Royalty Ln.</p>
             <p className="welcomeBody">A group of 10,000 Stoners each received an invite to an exclusive costume party from an undisclosed number. Each stoner is an alcohol drinking, kush smoking, party animal who loves good vibes. </p>
+          </div>
+          <div style={{ justifyContent: 'center', display: 'flex', marginTop: 141 }}>
+            <button className="mintBtn" onClick={(e) => handleButtonClick(e)}>BUY A STONER</button>
           </div>
           <div className="socialContainer">
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '90px'}}>
