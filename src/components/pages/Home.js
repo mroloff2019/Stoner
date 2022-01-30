@@ -4,6 +4,7 @@ import HeroSection from "../HeroSection";
 import Cards from "../Cards";
 import WelcomeMessage from "../welcomeMessage/WelcomeMessage";
 import RoadMap from "../roadmap/RoadMap";
+import Purchase from "../Purchase/Purchase";
 
 function Home(props) {
   const { showMintPage, setShowMintPage } = props
@@ -12,8 +13,7 @@ function Home(props) {
   if (showMintPage) {
     return (
       <div>
-        <p>The new page</p>
-        <button onClick={() => setShowMintPage(false)}> go back</button>
+        <Purchase />
       </div>
     )
   } else {
